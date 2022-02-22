@@ -52,7 +52,8 @@ namespace WebAPINorthwind_1.Controllers
             {
                 Name = x.CategoryName,
                 ID = x.CategoryID,
-                Description = x.Description
+                Description = x.Description,
+                ProductCount = x.Products.Count
             }).FirstOrDefault();
         }
 
